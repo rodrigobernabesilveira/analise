@@ -4,6 +4,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime
 from collections import Counter
+import urllib.parse
 from sklearn.feature_extraction.text import CountVectorizer
 import matplotlib.pyplot as plt
 
@@ -14,7 +15,10 @@ GRAFICO_FILE = 'grafico_tendencias.png'
 CATEGORIES = "cat:cs.AI OR cat:cs.LG OR cat:math.NT"
 MAX_RESULTS = 100
 
-url = f'http://export.arxiv.org/api/query?search_query={CATEGORIES}&sortBy=submittedDate&sortOrder=descending&max_results={MAX_RESULTS}'
+# Codifica os espaços e caracteres especiais para formato seguro de URL
+search_query_encoded = urllib.parse.quote(CATEGORIES)
+
+url = f'http://export.arxiv.org/api/query?search_query={search_query_encoded}&sortBy=submittedDate&sortOrder=descending&max_results={MAX_RESULTS}'
 req = urllib.request.urlopen(url)
 root = ET.fromstring(req.read())
 ns = {'atom': 'http://www.w3.org/2005/Atom'}
