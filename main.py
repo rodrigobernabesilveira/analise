@@ -81,7 +81,10 @@ except ValueError:
 words = vectorizer.get_feature_names_out()
 counts = X.sum(axis=0).A1
 
-freq_distribution = Counter(dict(zip(words, counts)))
+# Converte cada valor de 'counts' para int nativo do Python
+counts_native = [int(c) for c in counts]
+
+freq_distribution = Counter(dict(zip(words, counts_native)))
 top_terms = dict(freq_distribution.most_common(15))
 
 # --- STEP 2: Atualização Acumulativa do historico.json ---
