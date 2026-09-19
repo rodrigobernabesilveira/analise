@@ -19,7 +19,7 @@ MAX_RESULTS = 100
 search_query_encoded = urllib.parse.quote(CATEGORIES, safe=':()')
 
 # 1. CORREÇÃO: Usar a URL base oficial da API
-base_url = 'http://arxiv.org'
+base_url = 'https://export.arxiv.org/api/query'
 
 # 2. CORREÇÃO: Montar os parâmetros de forma que os dois-pontos (:) não quebrem
 # Passamos safe=':' para que o urllib não converta o ':' em '%3A'
