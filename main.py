@@ -26,6 +26,8 @@ headers = {
     'User-Agent': 'ArXivKeywordTracker/1.0 (https://github.com/rodrigobernabesilveira/analise)'
 }
 
+req_obj = urllib.request.Request(url, headers=headers)
+
 try:
     with urllib.request.urlopen(req_obj) as response:
         xml_data = response.read()
