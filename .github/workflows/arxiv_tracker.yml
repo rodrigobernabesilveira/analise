@@ -1,12 +1,8 @@
 name: ArXiv Daily Keyword Tracker
 
 on:
-  # Agendamento automático (Cron)
   schedule:
-    # Roda todos os dias às 09:00 UTC (06:00 no horário de Brasília)
     - cron: '0 9 * * *'
-  
-  # Permite disparar manualmente pelo botão na aba Actions do GitHub
   workflow_dispatch:
 
 jobs:
@@ -21,12 +17,11 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
-          cache: 'pip' # Otimiza o tempo de execução salvando os downloads do pip
 
       - name: Instalar Dependências
         run: |
           python -m pip install --upgrade pip
-          pip install scikit-learn
+          python -m pip install -r requirements.txt
 
       - name: Executar Script do ArXiv
         run: python main.py
