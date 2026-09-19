@@ -23,7 +23,9 @@ url = f'https://export.arxiv.org/api/query?search_query={search_query_encoded}&s
 # User-Agent no formato exigido pela política de uso da API do arXiv:
 # "NomeDoApp/Versao (mailto:seu_email@dominio.com)"
 headers = {
-    'User-Agent': 'ArXivKeywordTracker/1.0 (https://github.com/rodrigobernabesilveira/analise)'
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'Accept': 'application/atom+xml, application/xml, text/xml, */*',
+    'Accept-Language': 'en-US,en;q=0.9'
 }
 
 req_obj = urllib.request.Request(url, headers=headers)
