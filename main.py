@@ -18,10 +18,20 @@ MAX_RESULTS = 100
 # Codifica os espaços e caracteres especiais para formato seguro de URL
 search_query_encoded = urllib.parse.quote(CATEGORIES)
 
-url = f'https://export.arxiv.org/api/query?search_query={search_query_encoded}&sortBy=submittedDate&sortOrder=descending&max_results={MAX_RESULTS}'
+# 1. CORREÇÃO: Usar a URL base oficial da API
+base_url = 'http://arxiv.org'
 
-# User-Agent no formato exigido pela política de uso da API do arXiv:
-# "NomeDoApp/Versao (mailto:seu_email@dominio.com)"
+# 2. CORREÇÃO: Montar os parâmetros de forma que os dois-pontos (:) não quebrem
+# Passamos safe=':' para que o urllib não converta o ':' em '%3A'
+query_params = {
+    'search_query': CATEGORIES,
+    'sortBy': 'submittedDate',
+    'sortOrder': 'descending',
+    'max_results': MAX_RESULTS
+}
+encoded_params = urllib.parse.urlencode(query_params, safe=':')
+url = f"{base_url}?{encoded_params}"
+
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     'Accept': 'application/atom+xml, application/xml, text/xml, */*',
