@@ -38,11 +38,19 @@ headers = {
     'Accept-Language': 'en-US,en;q=0.9'
 }
 
-req_obj = urllib.request.Request(url, headers=headers)# --- STEP 2: Extração dos Resumos/Títulos do XML ---
+req_obj = urllib.request.Request(url, headers=headers)
 
+try:
+    with urllib.request.urlopen(req_obj) as response:
+        xml_data = response.read()
+        root = ET.fromstring(xml_data)
+except urllib.error.HTTPError as e:
+    print(f"Erro HTTP ao acessar arXiv: {e.code} - {e.reason}")
+    raise
+	
 NAMESPACE = {'atom': 'http://www.w3.org/2005/Atom'}
-
 corpus = []
+
 for entry in root.findall('atom:entry', NAMESPACE):
     summary = entry.find('atom:summary', NAMESPACE)
     title = entry.find('atom:title', NAMESPACE)
@@ -54,30 +62,21 @@ for entry in root.findall('atom:entry', NAMESPACE):
         texto += summary.text
         
     if texto.strip():
-        # Limpa quebras de linha e espaços extras
         texto_limpo = " ".join(texto.split())
         corpus.append(texto_limpo)
 
-print(f"Total de documentos coletados para o corpus: {len(corpus)}")
+print(f"Total de documentos coletados: {len(corpus)}")
 
-# --- STEP 3: Validação de Segurança e Extração de N-grams ---
 if not corpus:
-    print("Aviso: Nenhum documento retornado pelo arXiv para esta busca. Encerrando execução sem atualizar histórico.")
+    print("Nenhum documento retornado para a consulta. Encerrando execução sem erros.")
     exit(0)
 
-# Configura o vectorizer ignorando palavras vazias/curtas
-vectorizer = CountVectorizer(
-    stop_words='english',
-    ngram_range=(2, 3),  # Bigramas e Trigramas
-    min_df=1             # Aceita termos que apareçam ao menos 1 vez
-)
-
+# --- 3. Processamento de N-Grams com Scikit-Learn ---
 try:
+    vectorizer = CountVectorizer(stop_words='english', ngram_range=(2, 3), min_df=1)
     X = vectorizer.fit_transform(corpus)
-except ValueError as e:
-    print(f"Erro ao extrair vocabulário: {e}")
-    print("Tentando fallback sem limite de n-gramas rigoroso...")
-    # Fallback para unigramas + bigramas caso os textos sejam muito curtos
+except ValueError:
+    # Fallback caso os textos não gerem bigramas/trigramas suficientes
     vectorizer = CountVectorizer(stop_words='english', ngram_range=(1, 2), min_df=1)
     X = vectorizer.fit_transform(corpus)
 words = vectorizer.get_feature_names_out()
