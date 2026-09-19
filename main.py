@@ -18,14 +18,22 @@ MAX_RESULTS = 100
 # Codifica os espaços e caracteres especiais para formato seguro de URL
 search_query_encoded = urllib.parse.quote(CATEGORIES)
 
-url = f'http://export.arxiv.org/api/query?search_query={search_query_encoded}&sortBy=submittedDate&sortOrder=descending&max_results={MAX_RESULTS}'
-# --- ADICIONE O USER-AGENT AQUI ---
+url = f'https://export.arxiv.org/api/query?search_query={search_query_encoded}&sortBy=submittedDate&sortOrder=descending&max_results={MAX_RESULTS}'
+
+# User-Agent no formato exigido pela política de uso da API do arXiv:
+# "NomeDoApp/Versao (mailto:seu_email@dominio.com)"
 headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'User-Agent': 'ArXivKeywordTracker/1.0 (https://github.com/rodrigobernabesilveira/analise)'
 }
-req_obj = urllib.request.Request(url, headers=headers)
-req = urllib.request.urlopen(req_obj)
-root = ET.fromstring(req.read())
+
+try:
+    with urllib.request.urlopen(req_obj) as response:
+        xml_data = response.read()
+        root = ET.fromstring(xml_data)
+except urllib.error.HTTPError as e:
+    print(f"Erro HTTP ao acessar arXiv: {e.code} - {e.reason}")
+    raise
+	
 ns = {'atom': 'http://www.w3.org/2005/Atom'}
 
 corpus = []
