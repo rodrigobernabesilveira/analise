@@ -12,11 +12,11 @@ HISTORICO_FILE = 'historico.json'
 GRAFICO_FILE = 'grafico_tendencias.png'
 
 # --- STEP 1: Coleta de Dados do arXiv ---
-CATEGORIES = "cat:cs.AI OR cat:cs.LG OR cat:math.NT"
+CATEGORIES = "(cat:cs.AI OR cat:cs.LG OR cat:math.NT)"
 MAX_RESULTS = 100
 
 # Codifica os espaços e caracteres especiais para formato seguro de URL
-search_query_encoded = urllib.parse.quote(CATEGORIES)
+search_query_encoded = urllib.parse.quote(CATEGORIES, safe=':()')
 
 # 1. CORREÇÃO: Usar a URL base oficial da API
 base_url = 'http://arxiv.org'
@@ -31,6 +31,7 @@ query_params = {
 }
 encoded_params = urllib.parse.urlencode(query_params, safe=':')
 url = f"{base_url}?{encoded_params}"
+print(url)
 
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
