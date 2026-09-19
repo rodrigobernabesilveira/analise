@@ -19,7 +19,11 @@ MAX_RESULTS = 100
 search_query_encoded = urllib.parse.quote(CATEGORIES)
 
 url = f'http://export.arxiv.org/api/query?search_query={search_query_encoded}&sortBy=submittedDate&sortOrder=descending&max_results={MAX_RESULTS}'
-req = urllib.request.urlopen(url)
+# --- ADICIONE O USER-AGENT AQUI ---
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+}
+req = urllib.request.urlopen(url, headers=headers)
 root = ET.fromstring(req.read())
 ns = {'atom': 'http://www.w3.org/2005/Atom'}
 
