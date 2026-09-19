@@ -4,7 +4,7 @@ on:
   # Agendamento automático (Cron)
   schedule:
     # Roda todos os dias às 09:00 UTC (06:00 no horário de Brasília)
-    - cron: '0 15 * * *'
+    - cron: '0 9 * * *'
   
   # Permite disparar manualmente pelo botão na aba Actions do GitHub
   workflow_dispatch:
