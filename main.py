@@ -23,7 +23,8 @@ url = f'http://export.arxiv.org/api/query?search_query={search_query_encoded}&so
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
 }
-req = urllib.request.urlopen(url, headers=headers)
+req_obj = urllib.request.Request(url, headers=headers)
+req = urllib.request.urlopen(req_obj)
 root = ET.fromstring(req.read())
 ns = {'atom': 'http://www.w3.org/2005/Atom'}
 
