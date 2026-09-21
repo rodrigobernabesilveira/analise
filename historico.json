@@ -18,5 +18,25 @@
       "federated learning": 6,
       "finite element": 6
     }
+  },
+  {
+    "data": "2026-09-21",
+    "ranking": {
+      "language models": 27,
+      "vision language": 16,
+      "large language": 14,
+      "reinforcement learning": 13,
+      "fine tuning": 11,
+      "large language models": 11,
+      "language model": 10,
+      "end end": 9,
+      "state art": 9,
+      "vision language models": 9,
+      "world model": 9,
+      "mathrm mex": 8,
+      "latent space": 7,
+      "llm agents": 7,
+      "natural language": 7
+    }
   }
 ]
