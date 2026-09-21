@@ -34,7 +34,8 @@ url = f"{base_url}?{encoded_params}"
 print(url)
 
 headers = {
-    'User-Agent':'MeuScriptDePesquisaAcademica/1.0 (contato: seu_email@exemplo.com)'
+    'User-Agent':'MeuScriptDePesquisaAcademica/1.0 (contato: seu_email@exemplo.com)',
+	'Accept': 'application/atom+xml, application/xml, text/xml, */*'
 }
 
 req_obj = urllib.request.Request(url, headers=headers)
