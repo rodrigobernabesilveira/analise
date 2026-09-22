@@ -34,8 +34,7 @@ url = f"{base_url}?{encoded_params}"
 print(url)
 
 headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
-    'Accept': 'application/atom+xml, application/xml, */*'
+	"User-Agent": "MyArxivClient/1.0 (email@example.com)"
 }
 
 req_obj = urllib.request.Request(url, headers=headers)
