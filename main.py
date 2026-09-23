@@ -7,6 +7,7 @@ from collections import Counter
 import urllib.parse
 from sklearn.feature_extraction.text import CountVectorizer
 import matplotlib.pyplot as plt
+import arxiv
 
 HISTORICO_FILE = 'historico.json'
 GRAFICO_FILE = 'grafico_tendencias.png'
