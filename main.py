@@ -15,6 +15,11 @@ GRAFICO_FILE = 'grafico_tendencias.png'
 CATEGORIES = "(cat:cs.AI OR cat:cs.LG OR cat:math.NT)"
 MAX_RESULTS = 100
 
+ARXIV_USER_AGENT = (
+    "analise-arxiv-tracker/1.0 "
+    "(mailto:rodrigobernabesilveira@example.com)"
+)
+
 # Codifica os espaços e caracteres especiais para formato seguro de URL
 search_query_encoded = urllib.parse.quote(CATEGORIES, safe=':()')
 
@@ -34,7 +39,8 @@ url = f"{base_url}?{encoded_params}"
 print(url)
 
 headers = {
-	"User-Agent": "MyArxivClient/1.0 (email@example.com)"
+	"User-Agent": ARXIV_USER_AGENT,
+    "Accept": "application/atom+xml",
 }
 
 req_obj = urllib.request.Request(url, headers=headers)
