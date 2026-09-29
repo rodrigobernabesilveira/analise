@@ -38,5 +38,25 @@
       "llm agents": 7,
       "natural language": 7
     }
+  },
+  {
+    "data": "2026-09-29",
+    "ranking": {
+      "language models": 23,
+      "reinforcement learning": 21,
+      "language model": 20,
+      "large language": 20,
+      "test time": 16,
+      "large language models": 14,
+      "fine tuning": 9,
+      "image generation": 9,
+      "residual stream": 9,
+      "diffusion models": 8,
+      "available https": 7,
+      "long horizon": 7,
+      "policy distillation": 7,
+      "real world": 7,
+      "results demonstrate": 7
+    }
   }
 ]
