@@ -58,5 +58,25 @@
       "real world": 7,
       "results demonstrate": 7
     }
+  },
+  {
+    "data": "2026-09-30",
+    "ranking": {
+      "language models": 28,
+      "large language": 14,
+      "large language models": 13,
+      "language model": 12,
+      "foundation models": 11,
+      "mathsf mathcal": 11,
+      "state art": 10,
+      "fine tuning": 9,
+      "machine learning": 9,
+      "training data": 9,
+      "available https": 8,
+      "black box": 8,
+      "flow matching": 8,
+      "github com": 8,
+      "https github": 8
+    }
   }
 ]
