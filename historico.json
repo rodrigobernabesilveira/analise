@@ -78,5 +78,25 @@
       "github com": 8,
       "https github": 8
     }
+  },
+  {
+    "data": "2026-10-01",
+    "ranking": {
+      "real world": 21,
+      "language models": 15,
+      "time series": 13,
+      "percentage points": 11,
+      "fine tuning": 10,
+      "reinforcement learning": 10,
+      "state art": 10,
+      "mock theta": 9,
+      "ai text": 8,
+      "language model": 8,
+      "long horizon": 8,
+      "robot navigation": 8,
+      "graph transformation": 7,
+      "large language": 7,
+      "policy optimization": 7
+    }
   }
 ]
