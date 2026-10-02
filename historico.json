@@ -98,5 +98,25 @@
       "large language": 7,
       "policy optimization": 7
     }
+  },
+  {
+    "data": "2026-10-02",
+    "ranking": {
+      "language models": 34,
+      "large language": 25,
+      "reinforcement learning": 21,
+      "large language models": 20,
+      "higher order": 18,
+      "post training": 17,
+      "fine tuning": 14,
+      "language models llms": 12,
+      "models llms": 12,
+      "machine learning": 10,
+      "deep learning": 9,
+      "language model": 9,
+      "cross lingual": 8,
+      "fine grained": 8,
+      "positional encodings": 8
+    }
   }
 ]
