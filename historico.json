@@ -178,5 +178,25 @@
       "multi step": 8,
       "post training": 8
     }
+  },
+  {
+    "data": "2026-10-06",
+    "ranking": {
+      "language models": 19,
+      "language model": 17,
+      "large language": 12,
+      "low rank": 9,
+      "world models": 9,
+      "deep learning": 8,
+      "foundation models": 8,
+      "machine learning": 8,
+      "contextual tokens": 7,
+      "end end": 7,
+      "fine grained": 7,
+      "github com": 7,
+      "https github": 7,
+      "https github com": 7,
+      "label free": 7
+    }
   }
 ]
