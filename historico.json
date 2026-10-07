@@ -198,5 +198,25 @@
       "https github com": 7,
       "label free": 7
     }
+  },
+  {
+    "data": "2026-10-07",
+    "ranking": {
+      "language models": 24,
+      "flow matching": 14,
+      "large language": 13,
+      "real world": 11,
+      "zero shot": 10,
+      "language model": 9,
+      "large language models": 9,
+      "real time": 9,
+      "reinforcement learning": 9,
+      "available https": 8,
+      "long context": 8,
+      "post training": 8,
+      "speculative decoding": 8,
+      "vision language": 8,
+      "world models": 8
+    }
   }
 ]
