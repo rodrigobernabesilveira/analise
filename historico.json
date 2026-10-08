@@ -218,5 +218,25 @@
       "vision language": 8,
       "world models": 8
     }
+  },
+  {
+    "data": "2026-10-08",
+    "ranking": {
+      "language models": 19,
+      "large language": 15,
+      "fine tuning": 14,
+      "reinforcement learning": 12,
+      "large language models": 11,
+      "language model": 10,
+      "foundation models": 9,
+      "machine learning": 9,
+      "zero shot": 9,
+      "open source": 8,
+      "percentage points": 7,
+      "state art": 7,
+      "long horizon": 6,
+      "post training": 6,
+      "seq flow": 6
+    }
   }
 ]
