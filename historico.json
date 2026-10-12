@@ -298,5 +298,25 @@
       "state art": 8,
       "end end": 7
     }
+  },
+  {
+    "data": "2026-10-12",
+    "ranking": {
+      "language models": 15,
+      "fine tuning": 13,
+      "real world": 12,
+      "feature selection": 11,
+      "diffusion models": 10,
+      "neural networks": 10,
+      "github com": 9,
+      "https github": 9,
+      "https github com": 9,
+      "foundation models": 8,
+      "language model": 8,
+      "machine learning": 8,
+      "multi agent": 8,
+      "pre training": 8,
+      "predictive performance": 8
+    }
   }
 ]
