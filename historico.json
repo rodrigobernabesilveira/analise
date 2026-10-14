@@ -338,5 +338,25 @@
       "pre training": 8,
       "predictive performance": 8
     }
+  },
+  {
+    "data": "2026-10-14",
+    "ranking": {
+      "language models": 27,
+      "large language": 24,
+      "reinforcement learning": 19,
+      "language model": 18,
+      "training free": 17,
+      "large language models": 16,
+      "github com": 14,
+      "https github": 14,
+      "https github com": 14,
+      "real world": 13,
+      "vision language": 13,
+      "available https": 11,
+      "long horizon": 11,
+      "available https github": 10,
+      "fine tuning": 10
+    }
   }
 ]
