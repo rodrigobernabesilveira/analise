@@ -358,5 +358,25 @@
       "available https github": 10,
       "fine tuning": 10
     }
+  },
+  {
+    "data": "2026-10-15",
+    "ranking": {
+      "reinforcement learning": 20,
+      "language models": 18,
+      "large language": 14,
+      "real world": 13,
+      "long horizon": 10,
+      "large language models": 9,
+      "percentage points": 9,
+      "post training": 9,
+      "github com": 8,
+      "state art": 8,
+      "task specific": 8,
+      "test time": 8,
+      "https github": 7,
+      "https github com": 7,
+      "learning based": 7
+    }
   }
 ]
