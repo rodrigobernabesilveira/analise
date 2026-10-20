@@ -458,5 +458,25 @@
       "large language model": 6,
       "llm agents": 6
     }
+  },
+  {
+    "data": "2026-10-20",
+    "ranking": {
+      "language models": 23,
+      "reinforcement learning": 17,
+      "fine tuning": 14,
+      "machine learning": 11,
+      "foundation models": 10,
+      "world model": 10,
+      "log log": 9,
+      "multi agent": 9,
+      "available https": 8,
+      "github com": 8,
+      "https github": 8,
+      "https github com": 8,
+      "lower level": 8,
+      "model organisms": 8,
+      "real world": 8
+    }
   }
 ]
