@@ -478,5 +478,25 @@
       "model organisms": 8,
       "real world": 8
     }
+  },
+  {
+    "data": "2026-10-21",
+    "ranking": {
+      "language models": 23,
+      "language model": 19,
+      "large language": 16,
+      "github com": 12,
+      "https github": 12,
+      "https github com": 12,
+      "large language models": 11,
+      "real world": 11,
+      "vision language": 11,
+      "long horizon": 10,
+      "multi agent": 9,
+      "3d motion": 8,
+      "continuous time": 8,
+      "neural networks": 8,
+      "token prediction": 8
+    }
   }
 ]
