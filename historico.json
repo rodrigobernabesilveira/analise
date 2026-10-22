@@ -498,5 +498,25 @@
       "neural networks": 8,
       "token prediction": 8
     }
+  },
+  {
+    "data": "2026-10-22",
+    "ranking": {
+      "language models": 24,
+      "large language": 17,
+      "large language models": 15,
+      "reinforcement learning": 12,
+      "coding agents": 11,
+      "models llms": 11,
+      "language models llms": 10,
+      "post training": 9,
+      "zero shot": 9,
+      "fine tuning": 8,
+      "github com": 8,
+      "https github": 8,
+      "https github com": 8,
+      "open ended": 8,
+      "real world": 8
+    }
   }
 ]
