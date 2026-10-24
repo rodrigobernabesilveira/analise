@@ -538,5 +538,25 @@
       "llm agents": 7,
       "source target": 7
     }
+  },
+  {
+    "data": "2026-10-24",
+    "ranking": {
+      "language models": 39,
+      "large language": 20,
+      "large language models": 16,
+      "post hoc": 15,
+      "language model": 14,
+      "vision language": 14,
+      "fine tuning": 11,
+      "test time": 10,
+      "end end": 8,
+      "fine grained": 8,
+      "multi agent": 8,
+      "reinforcement learning": 8,
+      "continual learning": 7,
+      "llm agents": 7,
+      "source target": 7
+    }
   }
 ]
