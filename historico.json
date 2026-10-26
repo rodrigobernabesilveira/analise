@@ -578,5 +578,25 @@
       "llm agents": 7,
       "source target": 7
     }
+  },
+  {
+    "data": "2026-10-26",
+    "ranking": {
+      "language models": 13,
+      "fine tuning": 11,
+      "large language": 11,
+      "low rank": 11,
+      "available https": 10,
+      "contrastive learning": 10,
+      "github com": 10,
+      "https github": 10,
+      "https github com": 10,
+      "large language models": 10,
+      "reinforcement learning": 10,
+      "machine learning": 9,
+      "neural network": 9,
+      "vision language": 9,
+      "flow matching": 8
+    }
   }
 ]
