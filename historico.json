@@ -598,5 +598,25 @@
       "vision language": 9,
       "flow matching": 8
     }
+  },
+  {
+    "data": "2026-10-27",
+    "ranking": {
+      "language models": 23,
+      "large language": 17,
+      "reinforcement learning": 17,
+      "large language models": 14,
+      "real world": 14,
+      "language model": 13,
+      "neural networks": 11,
+      "multi objective": 10,
+      "time series": 9,
+      "domain specific": 8,
+      "machine learning": 8,
+      "test time": 8,
+      "active learning": 7,
+      "black box": 7,
+      "long horizon": 7
+    }
   }
 ]
