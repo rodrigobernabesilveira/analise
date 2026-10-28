@@ -618,5 +618,25 @@
       "black box": 7,
       "long horizon": 7
     }
+  },
+  {
+    "data": "2026-10-28",
+    "ranking": {
+      "language models": 18,
+      "large language": 15,
+      "reinforcement learning": 15,
+      "post training": 14,
+      "real time": 13,
+      "real world": 13,
+      "large language models": 12,
+      "tool use": 11,
+      "neural networks": 10,
+      "zero shot": 10,
+      "large scale": 9,
+      "neural network": 8,
+      "fine tuning": 7,
+      "language model": 7,
+      "machine learning": 7
+    }
   }
 ]
