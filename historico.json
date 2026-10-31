@@ -678,5 +678,25 @@
       "learning based": 7,
       "model trained": 7
     }
+  },
+  {
+    "data": "2026-10-31",
+    "ranking": {
+      "language models": 19,
+      "large language": 14,
+      "reinforcement learning": 13,
+      "deep learning": 12,
+      "language model": 10,
+      "fine tuning": 9,
+      "real world": 9,
+      "state art": 9,
+      "diffusion models": 8,
+      "end end": 8,
+      "large language models": 8,
+      "task specific": 8,
+      "foundation models": 7,
+      "learning based": 7,
+      "model trained": 7
+    }
   }
 ]
