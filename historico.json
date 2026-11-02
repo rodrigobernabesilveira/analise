@@ -718,5 +718,25 @@
       "learning based": 7,
       "model trained": 7
     }
+  },
+  {
+    "data": "2026-11-02",
+    "ranking": {
+      "reinforcement learning": 22,
+      "large language": 19,
+      "language models": 18,
+      "machine learning": 14,
+      "large language models": 13,
+      "long context": 11,
+      "fine tuning": 10,
+      "time series": 10,
+      "self efficacy": 9,
+      "state art": 9,
+      "gradient descent": 8,
+      "synthetic data": 8,
+      "end end": 7,
+      "language model": 7,
+      "language models llms": 7
+    }
   }
 ]
