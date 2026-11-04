@@ -758,5 +758,25 @@
       "large language": 7,
       "le le": 7
     }
+  },
+  {
+    "data": "2026-11-04",
+    "ranking": {
+      "language models": 20,
+      "language model": 17,
+      "long horizon": 15,
+      "fine tuning": 14,
+      "reinforcement learning": 14,
+      "machine learning": 13,
+      "large language": 12,
+      "neural networks": 11,
+      "foundation models": 10,
+      "vision language": 10,
+      "data collection": 9,
+      "end end": 9,
+      "large language model": 9,
+      "open weight": 8,
+      "base policy": 7
+    }
   }
 ]
