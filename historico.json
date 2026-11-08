@@ -818,5 +818,25 @@
       "post training": 7,
       "ai safety": 6
     }
+  },
+  {
+    "data": "2026-11-08",
+    "ranking": {
+      "reinforcement learning": 14,
+      "large language": 12,
+      "real world": 12,
+      "language models": 11,
+      "neural networks": 11,
+      "language model": 10,
+      "state art": 10,
+      "anomaly detection": 9,
+      "machine learning": 8,
+      "step sizes": 8,
+      "time series": 8,
+      "behavioral data": 7,
+      "large language models": 7,
+      "post training": 7,
+      "ai safety": 6
+    }
   }
 ]
