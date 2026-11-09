@@ -838,5 +838,25 @@
       "post training": 7,
       "ai safety": 6
     }
+  },
+  {
+    "data": "2026-11-09",
+    "ranking": {
+      "language models": 21,
+      "large language": 19,
+      "large language models": 14,
+      "real world": 10,
+      "reinforcement learning": 10,
+      "state art": 10,
+      "transformer based": 10,
+      "language model": 9,
+      "bilateral trade": 8,
+      "kv cache": 8,
+      "reward hacking": 8,
+      "target space": 8,
+      "test time": 8,
+      "fine tuning": 7,
+      "github com": 7
+    }
   }
 ]
