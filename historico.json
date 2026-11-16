@@ -978,5 +978,25 @@
       "https github": 8,
       "https github com": 8
     }
+  },
+  {
+    "data": "2026-11-16",
+    "ranking": {
+      "language models": 23,
+      "large language": 18,
+      "neural networks": 14,
+      "reinforcement learning": 14,
+      "large language models": 13,
+      "language model": 12,
+      "time series": 11,
+      "black box": 8,
+      "language models llms": 8,
+      "models llms": 8,
+      "real time": 8,
+      "task specific": 8,
+      "vision language": 8,
+      "category knowledge": 7,
+      "closed loop": 7
+    }
   }
 ]
