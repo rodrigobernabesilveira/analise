@@ -998,5 +998,25 @@
       "category knowledge": 7,
       "closed loop": 7
     }
+  },
+  {
+    "data": "2026-11-17",
+    "ranking": {
+      "language models": 22,
+      "large language": 15,
+      "reinforcement learning": 15,
+      "large language models": 12,
+      "language model": 9,
+      "machine learning": 9,
+      "time series": 9,
+      "neural networks": 8,
+      "synthetic data": 8,
+      "test time": 8,
+      "foundation models": 7,
+      "multi agent": 7,
+      "high resolution": 6,
+      "learning framework": 6,
+      "neural network": 6
+    }
   }
 ]
