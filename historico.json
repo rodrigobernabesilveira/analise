@@ -1018,5 +1018,25 @@
       "learning framework": 6,
       "neural network": 6
     }
+  },
+  {
+    "data": "2026-11-18",
+    "ranking": {
+      "language models": 31,
+      "reinforcement learning": 16,
+      "fine tuning": 14,
+      "large language": 14,
+      "large language models": 14,
+      "vision language": 14,
+      "black box": 12,
+      "natural language": 11,
+      "vision language models": 11,
+      "coding agents": 10,
+      "inference time": 8,
+      "kumo tabular": 8,
+      "language model": 8,
+      "image generation": 7,
+      "neural envelope": 7
+    }
   }
 ]
