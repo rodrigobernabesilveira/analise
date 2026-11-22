@@ -1098,5 +1098,25 @@
       "real time": 8,
       "available https": 7
     }
+  },
+  {
+    "data": "2026-11-22",
+    "ranking": {
+      "language models": 22,
+      "large language": 16,
+      "energy management": 13,
+      "fine tuning": 12,
+      "post training": 12,
+      "reinforcement learning": 12,
+      "language model": 11,
+      "large language models": 11,
+      "real world": 11,
+      "vision language": 10,
+      "machine learning": 9,
+      "neural network": 9,
+      "neural networks": 9,
+      "real time": 8,
+      "available https": 7
+    }
   }
 ]
