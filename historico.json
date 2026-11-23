@@ -1118,5 +1118,25 @@
       "real time": 8,
       "available https": 7
     }
+  },
+  {
+    "data": "2026-11-23",
+    "ranking": {
+      "language model": 14,
+      "language models": 14,
+      "zero shot": 13,
+      "reinforcement learning": 12,
+      "fine tuning": 10,
+      "hy mt3": 10,
+      "neural networks": 10,
+      "world models": 10,
+      "fault detection": 9,
+      "multi agent": 9,
+      "real world": 8,
+      "vision language": 8,
+      "boldsymbol mathrm": 7,
+      "boldsymbol mathrm bad": 7,
+      "end end": 7
+    }
   }
 ]
