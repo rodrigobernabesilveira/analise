@@ -1138,5 +1138,25 @@
       "boldsymbol mathrm bad": 7,
       "end end": 7
     }
+  },
+  {
+    "data": "2026-11-24",
+    "ranking": {
+      "language models": 19,
+      "vision language": 19,
+      "language model": 16,
+      "large language": 12,
+      "large scale": 10,
+      "test time": 10,
+      "vision language models": 10,
+      "decision models": 9,
+      "foundation models": 9,
+      "mathbb _p": 9,
+      "reinforcement learning": 8,
+      "task specific": 8,
+      "available https": 7,
+      "large language models": 7,
+      "learning rate": 7
+    }
   }
 ]
