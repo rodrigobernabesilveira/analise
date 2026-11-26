@@ -1178,5 +1178,25 @@
       "language models llms": 8,
       "models llms": 8
     }
+  },
+  {
+    "data": "2026-11-26",
+    "ranking": {
+      "reinforcement learning": 24,
+      "language models": 17,
+      "fine tuning": 13,
+      "vision language": 13,
+      "large language": 12,
+      "world models": 12,
+      "large language models": 10,
+      "long horizon": 9,
+      "percentage points": 9,
+      "post training": 9,
+      "time series": 9,
+      "bench verified": 8,
+      "hl pair": 8,
+      "language model": 8,
+      "swe bench": 8
+    }
   }
 ]
